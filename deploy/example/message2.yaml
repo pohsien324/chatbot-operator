@@ -1,0 +1,17 @@
+apiVersion: pohsienshih.com/v1
+kind: Message
+metadata:
+  name: example-message2
+  namespace: default
+spec:
+  botname:
+  - name1
+  - name2
+  #...
+  group:
+  - group1
+  - group2
+  #...
+  keyword: "Hi bot!"
+  response: "Hello World!"
+           

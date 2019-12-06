@@ -1,0 +1,9 @@
+apiVersion: pohsienshih.com/v1
+kind: Bot
+metadata:
+  name: example-telegrambot
+  namespace: default
+spec:
+  bottype: telegram
+  group: "group name"
+  telegramtoken: "Your Telegram token"

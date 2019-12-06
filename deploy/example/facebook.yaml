@@ -1,0 +1,10 @@
+apiVersion: pohsienshih.com/v1
+kind: Bot
+metadata:
+  name: example-messengerbot
+  namespace: default
+spec:
+  bottype: facebook
+  group: "group name"
+  pagetoken: "Your page token"
+  verifytoken: "Your verify token"

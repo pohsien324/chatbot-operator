@@ -1,0 +1,24 @@
+# apiVersion: rbac.authorization.k8s.io/v1
+# kind: ClusterRole
+# metadata:
+#   creationTimestamp: null
+#   name: chatbot-operator
+# rules:
+# - apiGroups: ["*"]
+#   resourceNames: ["*"]   
+#   resources: ["*"]
+#   verbs: ["*"] 
+
+
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: chatbot-operator
+subjects:
+- kind: ServiceAccount
+  name: chatbot-operator
+  namespace: default
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin
+  apiGroup: rbac.authorization.k8s.io

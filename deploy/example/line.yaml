@@ -1,0 +1,10 @@
+apiVersion: pohsienshih.com/v1
+kind: Bot
+metadata:
+  name: example-linebot
+  namespace: default
+spec:
+  bottype: line
+  group: "group name"
+  channelsecret: "Your channel secret"
+  channeltoken: "Your channel token"
